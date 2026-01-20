@@ -1,0 +1,157 @@
+ {% include "web/navbar.html" %}
+    <style>
+        .service-card{
+            transition: 0.3s;
+        }
+        .service-card:hover{
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        .service-icon{
+            font-size: 40px;
+            color: red;
+        }
+         .log{
+            height:200px;
+            width: 100%;
+     
+    
+        }
+         .footer {
+            background-color: #2e3748;
+            color: white;
+            padding: 60px 0 30px;
+        }
+        
+        .footer h5 {
+            color: white;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #a0aec0;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+    </style>
+
+
+<!--  Services Hero Section -->
+<section class="bg -light text-center py-5">
+    <div class="container bg-white">
+         <!-- <img class="log " src="/static/logo.avif" class=" mt-5"> -->
+        <h1 class="fw-bold">Our Services</h1>
+        <p class="mt-2">We provide the best food & dining experience</p>
+    </div>
+</section>
+
+<!--  Services Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="row g-4">
+
+            <!-- Service 1 -->
+            <div class="col-md-4">
+                <div class="card service-card text-center p-4 h-100">
+                    <div class="service-icon mb-3">🍽️</div>
+                    <h5>Dine In</h5>
+                    <p>Enjoy delicious food in a comfortable and family-friendly ambience.</p>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="col-md-4">
+                <div class="card service-card text-center p-4 h-100">
+                    <div class="service-icon mb-3">🚚</div>
+                    <h5>Home Delivery</h5>
+                    <p>Fast and hygienic home delivery at your doorstep.</p>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="col-md-4">
+                <div class="card service-card text-center p-4 h-100">
+                    <div class="service-icon mb-3">📦</div>
+                    <h5>Take Away</h5>
+                    <p>Order food and pick it up quickly without waiting.</p>
+                </div>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="col-md-4">
+                <div class="card service-card text-center p-4 h-100">
+                    <div class="service-icon mb-3">🎉</div>
+                    <h5>Party & Events</h5>
+                    <p>Perfect place for birthdays, family parties & celebrations.</p>
+                </div>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="col-md-4">
+                <div class="card service-card text-center p-4 h-100">
+                    <div class="service-icon mb-3">🍱</div>
+                    <h5>Catering Service</h5>
+                    <p>We provide catering services for weddings and events.</p>
+                </div>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="col-md-4">
+                <div class="card service-card text-center p-4 h-100">
+                    <div class="service-icon mb-3">🕒</div>
+                    <h5>Online Order</h5>
+                    <p>Order your favorite food online with easy payment.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!--  Footer -->
+<div class="container bg-light mb-5 mt-5">
+    <div class="section-title text-center">
+      <h3>Order Now</h3>
+    </div>
+    <div class="col-md-8 col-md-offset-2">
+      <form name="sentMessage" id="contactForm" novalidate="">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="text" id="name" class="form-control" placeholder="Name" required="required">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="email" id="email" class="form-control" placeholder="Email" required="required">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required=""></textarea>
+          <p class="help-block text-danger"></p>
+        </div>
+        <div id="success"></div>
+        <button type="submit" class="btn btn-custom btn-lg">Confirm Order</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+ {% include "web/footer.html" %}

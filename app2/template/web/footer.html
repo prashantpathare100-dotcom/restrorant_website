@@ -1,0 +1,248 @@
+<!-- Footer Section -->
+<footer class="footer bg-dark text-white py-5 mt-5">
+    <div class="container">
+        <div class="row">
+            <!-- Column 1: About -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="d-flex align-items-center mb-3">
+                    <img src="/static/logoi.png" alt="Logo" class="logo-footer" style="height: 50px; width: auto;">
+                    <h3 class="ms-3 mb-0" style="color: cadetblue;">CulinarySpot</h3>
+                </div>
+                <p class="mb-4">Established in 2018, we serve delicious Indian and Chinese cuisine with fresh ingredients and authentic flavors. Your satisfaction is our priority.</p>
+                <div class="social-icons">
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-youtube fa-lg"></i></a>
+                </div>
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div class="col-lg-2 col-md-6 mb-4">
+                <h5 class="mb-4" style="color: #ffc107;">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="/" class="text-white text-decoration-none hover-gold">Home</a></li>
+                    <li class="mb-2"><a href="/about" class="text-white text-decoration-none hover-gold">About Us</a></li>
+                    <li class="mb-2"><a href="/menu" class="text-white text-decoration-none hover-gold">Menu</a></li>
+                    <li class="mb-2"><a href="/services" class="text-white text-decoration-none hover-gold">Services</a></li>
+                    <li class="mb-2"><a href="/contact" class="text-white text-decoration-none hover-gold">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Contact Info -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <h5 class="mb-4" style="color: #ffc107;">Contact Info</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-3 d-flex align-items-start">
+                        <i class="fas fa-map-marker-alt me-3 mt-1" style="color: #ffc107;"></i>
+                        <span>123 Restaurant Street, Mumbai, Maharashtra 400001</span>
+                    </li>
+                    <li class="mb-3 d-flex align-items-center">
+                        <i class="fas fa-phone me-3" style="color: #ffc107;"></i>
+                        <span>+91 9876543210</span>
+                    </li>
+                    <li class="mb-3 d-flex align-items-center">
+                        <i class="fas fa-envelope me-3" style="color: #ffc107;"></i>
+                        <span>info@culinaryspot.com</span>
+                    </li>
+                    <li class="d-flex align-items-center">
+                        <i class="fas fa-clock me-3" style="color: #ffc107;"></i>
+                        <span>10:00 AM - 11:00 PM (Daily)</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Newsletter -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <h5 class="mb-4" style="color: #ffc107;">Newsletter</h5>
+                <p class="mb-3">Subscribe to get updates on new dishes and special offers!</p>
+                <div class="input-group mb-3">
+                    <input type="email" class="form-control" placeholder="Your Email" id="newsletterEmail">
+                    <button class="btn btn-warning" type="button" onclick="subscribeNewsletter()">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+                <p class="text-muted small">We respect your privacy. Unsubscribe at any time.</p>
+                
+                <!-- Payment Methods -->
+                <div class="mt-4">
+                    <h6 class="mb-3" style="color: #ffc107;">We Accept</h6>
+                    <div class="d-flex flex-wrap gap-2">
+                        <i class="fab fa-cc-visa fa-2x text-white bg-secondary p-2 rounded"></i>
+                        <i class="fab fa-cc-mastercard fa-2x text-white bg-secondary p-2 rounded"></i>
+                        <i class="fab fa-cc-paypal fa-2x text-white bg-secondary p-2 rounded"></i>
+                        <i class="fab fa-google-pay fa-2x text-white bg-secondary p-2 rounded"></i>
+                        <i class="fab fa-apple-pay fa-2x text-white bg-secondary p-2 rounded"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-4" style="border-color: #444;">
+
+        <!-- Bottom Bar -->
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                <p class="mb-0">&copy; <span id="currentYear"></span> CulinarySpot Restaurant. All Rights Reserved.</p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item"><a href="/privacy" class="text-white text-decoration-none hover-gold">Privacy Policy</a></li>
+                    <li class="list-inline-item mx-2">|</li>
+                    <li class="list-inline-item"><a href="/terms" class="text-white text-decoration-none hover-gold">Terms & Conditions</a></li>
+                    <li class="list-inline-item mx-2">|</li>
+                    <li class="list-inline-item"><a href="/sitemap" class="text-white text-decoration-none hover-gold">Sitemap</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Back to Top Button -->
+        <div class="text-center mt-4">
+            <button class="btn btn-outline-warning btn-sm" onclick="scrollToTop()">
+                <i class="fas fa-arrow-up me-2"></i>Back to Top
+            </button>
+        </div>
+    </div>
+</footer>
+
+ <style>
+
+/* Footer Styles */
+
+.footer {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2c3e50 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #ffc107, #ff6b6b, #4ecdc4);
+}
+
+.hover-gold {
+    transition: all 0.3s ease;
+}
+
+.hover-gold:hover {
+    color: #ffc107 !important;
+    padding-left: 5px;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background: #ffc107;
+    transform: translateY(-3px);
+    color: #000 !important;
+}
+
+/* Newsletter input focus */
+#newsletterEmail:focus {
+    border-color: #ffc107;
+    box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.25);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer {
+        text-align: center;
+    }
+    
+    .social-icons a {
+        margin: 0 8px;
+    }
+    
+    .list-inline-item.mx-2 {
+        margin: 0 5px !important;
+    }
+}
+</style>
+/* Add these functions to your existing <script> tag */
+
+// Set current year in footer
+document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+// Newsletter subscription
+function subscribeNewsletter() {
+    const email = document.getElementById('newsletterEmail').value;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    
+    if (!email) {
+        alert('Please enter your email address');
+        return;
+    }
+    
+    if (!emailRegex.test(email)) {
+        alert('Please enter a valid email address');
+        return;
+    }
+    
+    // In a real application, you would send this to your backend
+    alert(`Thank you! ${email} has been subscribed to our newsletter.`);
+    document.getElementById('newsletterEmail').value = '';
+    
+    // Simulate API call
+    console.log('Newsletter subscription:', email);
+    
+    // Save to localStorage for demo
+    let subscribers = JSON.parse(localStorage.getItem('newsletter_subscribers') || '[]');
+    subscribers.push({
+        email: email,
+        date: new Date().toISOString()
+    });
+    localStorage.setItem('newsletter_subscribers', JSON.stringify(subscribers));
+}
+
+// Back to top function
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
+// Add scroll event to show/hide back to top button
+window.addEventListener('scroll', function() {
+    const backToTopBtn = document.querySelector('.btn-outline-warning');
+    if (window.scrollY > 300) {
+        backToTopBtn.style.opacity = '1';
+        backToTopBtn.style.visibility = 'visible';
+    } else {
+        backToTopBtn.style.opacity = '0';
+        backToTopBtn.style.visibility = 'hidden';
+    }
+});
+
+// Initialize back to top button visibility
+document.addEventListener('DOMContentLoaded', function() {
+    const backToTopBtn = document.querySelector('.btn-outline-warning');
+    backToTopBtn.style.transition = 'all 0.3s ease';
+    backToTopBtn.style.opacity = '0';
+    backToTopBtn.style.visibility = 'hidden';
+});
+
+// Add click tracking for analytics (demo)
+document.querySelectorAll('.footer a').forEach(link => {
+    link.addEventListener('click', function(e) {
+        const linkText = this.textContent || this.querySelector('i').className;
+        console.log(`Footer link clicked: ${linkText}`);
+        
+        // In real app, send to analytics
+        // ga('send', 'event', 'Footer', 'Click', linkText);
+    });
+});

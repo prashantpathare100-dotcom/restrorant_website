@@ -1,0 +1,89 @@
+ {% include "web/navbar.html" %}
+    <style>
+        .bg{
+              background-image: url(/static/bg.avif);
+        }
+       
+         /* hero */
+        .log{
+            height:500px;
+            width: 50%;
+            border-radius: 50%;
+            float: right;
+            margin-right:-50px;
+            margin-top: -270px;
+        }
+        .logo{
+        padding: 0%;
+        margin-left: -60%;
+        height: 80px;
+        width: auto;
+        float: left;
+       }
+       .culinary{
+        font-size: 30px;
+        color: cadetblue;
+        float: left;
+        margin-top: -60px;
+        margin-left:50px;
+       }
+    
+      
+        .ab{
+            margin-top: 100px;
+        }
+        .bu{ margin-top: 300px;
+        }
+        .hero{
+          font-size: small;
+        }
+        .menu{
+          float: left;
+          height: 200px;
+          width: 50%;
+         
+          inline-size: block;
+          
+        }
+        .research-card{
+    border-left: 5px solid #dc3545;
+    transition: 0.3s;
+}
+.research-card:hover{
+    background:#f8f9fa;
+    transform: translateX(5px);
+}
+ 
+    </style>
+
+
+
+<section id="research" class=" py-5">
+<div class="container">
+<h2 class="text-center mb-5 bg-light">Research & Innovation</h2>
+
+<div class="research-card p-4 mb-3">
+<h5>Customer Feedback Research</h5>
+<p>We analyze customer reviews to improve food quality.</p>
+</div>
+
+<div class="research-card p-4 mb-3">
+<h5>Menu Innovation</h5>
+<p>New dishes based on food trends.</p>
+</div>
+
+<div class="research-card p-4">
+<h5>Hygiene & Safety Study</h5>
+<p>Strict hygiene and safety standards.</p>
+</div>
+</div>
+</section>
+ 
+        
+<script type="text/javascript">document.querySelectorAll(".gallery-img img").forEach(img=>{
+    img.addEventListener("click",()=>{
+        window.open(img.src,"_blank");
+    });
+});</script>
+ {% include "web/footer.html" %}
+</body></html>
