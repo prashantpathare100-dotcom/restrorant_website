@@ -6,9 +6,11 @@ click==8.3.0
 colorama==0.4.6
 Django==5.2.9
 fastapi==0.121.2
+gunicorn==23.0.0
 h11==0.16.0
 idna==3.11
 mysql-connector-python==9.5.0
+packaging==25.0
 pillow==12.1.0
 pydantic==2.12.4
 pydantic_core==2.41.5
